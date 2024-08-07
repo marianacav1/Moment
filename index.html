@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/moment-heartbrown2.png"
+      type="image/x-icon"
+    />
+    <title>Moment Loja</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hd">
+      <div class="headerContent">
+        <img src="images/moment-heartbrown2.png" alt="Logo" class="hd_logo" />
+        <!-- <div class="hd_logo">Moment</div> -->
+        <nav class="hd_nav">
+          <ul>
+            <li><a href="#eu">Quem sou eu</a></li>
+            <li><a href="menu" class="hd-active">Menu</a></li>
+
+            <li>
+              <a href="https://api.whatsapp.com/send/?phone=5511946710734"
+                >Contato</a
+              >
+            </li>
+            <li carrinho>
+              <a href="carrinho"><i class="ri-shopping-cart-line"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <span class="menuHamb"><i class="ri-menu-line"></i></span>
+      </div>
+    </header>
+
+    <section class="price offer">
+      <h1 class="main_title">Ofertas</h1>
+      <div class="alignOffer">
+        <div class="price_plan">
+          <!-- flex container -->
+          <h2 class="plan_title">Simple</h2>
+          <p><span class="pricing">R$ 22.00 </span></p>
+          <ul class="features">
+            <li>6 Trufas</li>
+          </ul>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5511946710734"
+            class="pricing_cta"
+            target="_blank"
+            >Compre Já</a
+          >
+        </div>
+
+        <div class="price_plan">
+          <h2 class="plan_title">Royal</h2>
+          <p><span class="pricing">R$ 28.00 </span></p>
+          <ul class="features">
+            <li>8 Trufas</li>
+          </ul>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5511946710734"
+            class="pricing_cta"
+            target="_blank"
+            >Compre Já</a
+          >
+        </div>
+
+        <!--<div class="price_plan">
+          <h2 class="plan_title">Deluxe</h2>
+          <p><span class="pricing">R$ 13.00 </span></p>
+          <ul class="features">
+            <li>10 Website</li>
+          </ul>
+          <a href="#" class="pricing_cta">Compre Já</a>
+        </div>-->
+      </div>
+    </section>
+
+    <h1 class="main_title">Pacotes</h1>
+    <section class="price">
+      <div class="price_plan">
+        <!-- flex container -->
+        <h2 class="plan_title">Sweet</h2>
+        <p><span class="pricing">R$ 25.00 </span></p>
+        <ul class="features">
+          <li>5 Trufas</li>
+        </ul>
+        <a
+          href="https://api.whatsapp.com/send/?phone=5511946710734"
+          class="pricing_cta"
+          target="_blank"
+          >Compre Já</a
+        >
+      </div>
+
+      <div class="price_plan">
+        <h2 class="plan_title">Tasty</h2>
+        <p><span class="pricing">R$ 35.00 </span></p>
+        <ul class="features">
+          <li>7 Trufas</li>
+        </ul>
+        <a
+          href="https://api.whatsapp.com/send/?phone=5511946710734"
+          class="pricing_cta"
+          target="_blank"
+          >Compre Já</a
+        >
+      </div>
+
+      <div class="price_plan">
+        <h2 class="plan_title">Divine</h2>
+        <p><span class="pricing">R$ 50.00 </span></p>
+        <ul class="features">
+          <li>10 Trufas</li>
+        </ul>
+        <a
+          href="https://api.whatsapp.com/send/?phone=5511946710734"
+          class="pricing_cta"
+          target="_blank"
+          >Compre Já</a
+        >
+      </div>
+    </section>
+
+    <div class="eu">
+      <img src="images/chocolate.jpg" alt="Chocolates" />
+      <div class="divabout">
+        <h2 id="eu">Quem sou eu</h2>
+        <p>
+          Meu nome é Mariana, sou uma estudante cursando o 3º Ano na escola Jair
+          Toledo Xavier. Criei esse site com a finalidade de apresentar um
+          trabalho escolar e começar meu próprio negócio.
+        </p>
+      </div>
+    </div>
+
+    <address class="address">
+      Segunda à Quarta das 14:00 às 18:30 <br />Endereço: Av.João Paulo I
+    </address>
+
+    <script>
+      var btnMenu = document.querySelector(".menuHamb");
+      btnMenu.addEventListener("click", function () {
+        var menuDefault = document.querySelector(".hd_nav");
+        menuDefault.classList.toggle("active");
+      });
+    </script>
+  </body>
+  <footer>&copy Moment</footer>
+</html>
